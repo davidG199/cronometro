@@ -14,13 +14,14 @@ body{
 
 .contenedor-principal{
     width: 80vw;
-    max-width: 600px;
-    min-height: 350px;
+    max-width: 540px;
+    min-height: 315px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: white;
+    border-radius: 12px;
 }
 
 .contenedor-botones{
@@ -36,27 +37,44 @@ body{
     font-family:fantasy ;
 }
 
+#cronometro span{
+    font-size: 40px;
+}
+
 .boton{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     font-size: 50px;
+    border-radius: 10px;
+    border: none;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
 }
 
-#boton-inicio-pausa.iniciar,
-#boton-inicio-pausa.iniciar i {
-    background-color: greenyellow;
+#boton-inicio-pausa.iniciar {
+    background-color: rgb(161, 255, 21);
 }
 
-#boton-inicio-pausa.pausar,
-#boton-inicio-pausa.pausar i {
-    background-color: #ffdc00;
+#boton-inicio-pausa.iniciar:hover{
+    background-color: rgb(131, 235, 11);
+
+}
+
+#boton-inicio-pausa.pausar {
+    background-color: rgb(255, 230, 0);
+}
+
+#boton-inicio-pausa.pausar:hover {
+    background-color: rgb(235, 220, 0);
 }
 
 #boton-reiniciar{
-    background-color: red;
+    background-color: rgb(255, 0, 0);
+}
+
+#boton-reiniciar:hover{
+    background-color: rgb(225, 0, 0);
 }
 
 
